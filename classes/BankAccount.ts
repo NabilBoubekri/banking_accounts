@@ -26,8 +26,6 @@ export class BankAccount{
         this.transactions.forEach(elem=>console.log(`_____\n${elem.date} - ${elem.type} : ${elem.mantant} 
             \n${elem.date.toLocaleString()} - ${elem.type} : ${elem.mantant}
             \n${elem.date.toISOString()} - ${elem.type} : ${elem.mantant}`));
-        //this.transactions.forEach(elem=>console.log(`${elem.date.toLocaleString()} - ${elem.type} : ${elem.mantant}`));
-        //this.transactions.forEach(elem=>console.log(`${elem.date.toISOString()} - ${elem.type} : ${elem.mantant}`));
     }
 
     public transfer(account:BankAccount, value:number): void{
